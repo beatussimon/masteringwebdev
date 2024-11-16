@@ -1,0 +1,6 @@
+CSS selector
+css property
+css value
+
+onhover- adds pseudo-class when we are in a certain situation 
+1:03:12
