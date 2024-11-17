@@ -19,3 +19,11 @@ Text element- These exist inside the text element, text eleemnts like bold, stri
 properties by default but <span> element is very dope bse it doesnt come with defaukt properties making it 
 best if you want to target a speciefic part of the text and add some styles or changes by uising the classes super flexible
 
+void elements-  they dont require the closing tqg
+
+a paragraph by default is a block element
+inline block element takes as mich space as it needs to eg. img and input element
+inline element- appears with in a line of text 
+These element properties can be changes accordingly using the display css attribute
+
+2:25:00 - Lesson 8
