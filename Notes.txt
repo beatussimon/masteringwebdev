@@ -4,3 +4,18 @@ css value
 
 onhover- adds pseudo-class when we are in a certain situation 
 1:03:12
+
+Using padding is the better altenative to the hwight and width because using passsing allows the button to resize  
+with the length of the text
+
+vertical align either top or butm overwrites the default text alignment behaviour 
+which tends to align the items according to the text by default
+
+HTML entity give you the code symbols fo instance copyright, certifies etc.
+
+SPECIFICITY -> Element name ->classname ->id    
+
+Text element- These exist inside the text element, text eleemnts like bold, string, u comes with some 
+properties by default but <span> element is very dope bse it doesnt come with defaukt properties making it 
+best if you want to target a speciefic part of the text and add some styles or changes by uising the classes super flexible
+
