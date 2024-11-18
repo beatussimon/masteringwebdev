@@ -27,3 +27,7 @@ inline element- appears with in a line of text
 These element properties can be changes accordingly using the display css attribute
 
 2:25:00 - Lesson 8
+
+by default divs have 100% width so they behave like block elements
+
+3:16
