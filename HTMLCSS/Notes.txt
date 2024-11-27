@@ -112,3 +112,7 @@ single line commenting find that
 
 
 flexbox, media queries
+
+grid-column-gap
+grid-row-gap
+grid-template-column
