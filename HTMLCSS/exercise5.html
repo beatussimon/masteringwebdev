@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cat</title>
+    <style>
+        .cat{
+            display: inline-block;
+            width: 600px;
+            height: 150px;
+            font-family: Arial, Helvetica, sans-serif;
+            vertical-align: middle;
+        }
+        .profile{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .profile-pic{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50px;    
+        }
+        .profile-info{
+            display: inline-block;
+            margin-left: 20px;
+            font-size: 25px;
+            margin-right: 200px;
+            vertical-align: middle;
+        }
+        .follow-div{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .follow{
+            display: inline-block;
+            color: white;
+            background-color: rgb(0, 162, 255);
+            border: none;
+            border-radius: 8px ;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 25px;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+        .name{
+            font-weight: 700;
+            margin-bottom: 0px;
+        }
+        .thecat, .popular{
+            margin-top: 4px;
+            margin-bottom: 0px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+        <div class="cat">
+            <div class="profile"><img class="profile-pic" src="images/hoodiecat.jpg" alt=""></div>
+            <div class="profile-info">
+                <p class="name">Oliver</p>
+                <p class="thecat">the cat</p>
+                <p class="popular">popular</p>
+            </div>
+            <div class="follow-div">
+                <button class="follow">Follow</button>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+CSS selector
+css property
+css value
+
+onhover- adds pseudo-class when we are in a certain situation 
+1:03:12
+
+Using padding is the better altenative to the hwight and width because using passsing allows the button to resize  
+with the length of the text
+
+vertical align either top or butm overwrites the default text alignment behaviour 
+which tends to align the items according to the text by default
+
+HTML entity give you the code symbols fo instance copyright, certifies etc.
+
+SPECIFICITY -> Element name ->classname ->id    
+
+Text element- These exist inside the text element, text eleemnts like bold, string, u comes with some 
+properties by default but <span> element is very dope bse it doesnt come with defaukt properties making it 
+best if you want to target a speciefic part of the text and add some styles or changes by uising the classes super flexible
+
+void elements-  they dont require the closing tqg
+
+a paragraph by default is a block element
+inline block element takes as mich space as it needs to eg. img and input element
+inline element- appears with in a line of text 
+These element properties can be changes accordingly using the display css attribute
+
+2:25:00 - Lesson 8
+
+by default divs have 100% width so they behave like block elements
+
+3:16
+
+you aliggn items in grid using align items attribute
+
+flexbox is the same as grid but its more flexible
+
+3:45 flexbox Lesson 11
+
+Flex:1 is the equivalent of 1fr in grid 
+4:15 today up to lesson 14
+
+The div inside the container with flex doesnt means the items inside a flexbox that means 
+you are unable to have the previllege to use some properties like ALIGN ITEMS or JUSTIFY-CONTENT
+
+QUESTION: when to use flexbox and when to use grid
+
+bt defaukt the flex-direction is row
+
+4:44 CSS Position
+
+flex-shrink:0; -> this implies dont shrinkwidth: 0 -> implies the element shrinks
+finish up the exercise  which you found yourself in trouble for intance aligning an ittem horizontallyt and vertically according
+compelete then keep moving foward
+
+05:07 -> Position Absolute and relative 
+
+Normally the fitems written bekow will appear on top of the elemtnts written above it we can overwrite it by adding anither 
+property called z-index -> determines which elements appear in the front and which eleemnts appear in the behind defauilt index id 0px
+the greater the z index the more front it appears
+
+the goos thing about position relatiove you can place it inside the position fixed and the relative to fixed relationship wil occur
+
+in position static the elements always appears at the back of the page, after changing the position to the others the rule of which was written 
+first is considered
+
+
+do the exercise in 15e clothing design 5:33:47
+
+when we write .sidebar-link image{
+    we are targeting the all of the images in side the sidebar
+    targeting the items inside the left chosen selection
+
+}
+
+if you use the fkex=direction property to column the align items and JUSTIFYcontent
+centering dierections are reversed
+
+to target the element only when you hover you can use the fiollowing syntax
+.sidebar-link:hover{
+    then add your code
+}
+
+pointer effects : none so that pointer effects are shown when the mouse is hoveref 
+on the tooltip but only on the button
+
+lesson 17
+media queries
+if you have two paddings like 21px 45px the left padding will be the (1st value vertical paddingans the selectiond 
+value will be the horizontal padding)
+if you use all the  four values its like starting from the to and going your way out clockwisely
+
+for border: 1px  solid color corresponds to border radius, border style, and border color 
+
+INHERITANCE
+When you set the style to the inner elements it gets passed down to the outer elements 
+
+Not all the elements are affected by the INHERITANCE for example 
+INHERITANCE mostly works with text elemtnts doesnt affect things like border margin and padding
+
+INHERITANCE is deeply affected by SPECIFICITY
+
+semantic elements 
+<nav> <header> <main inside main you have section> <footer> they are just the same as divs except they give special meaning  and structure to urr page for search enngnines and screen readers 
+
+comments
+
+<!this is a comment!>
+
+single line commenting find that

@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absoluteRelative</title>
+    <style>
+        .div1{
+            background-color: lightblue;
+            height: 300px;
+            width: 300px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .div2{
+            background-color: lightgreen;
+            height: 300px;
+            width: 300px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            padding-bottom: 50px;
+            background-color: green;            
+        }
+        .sidebar{
+            position: fixed;
+            left: 0;top: 85px;
+            bottom: 0px;
+            color:  white;
+            background-color: blueviolet;
+        }
+        .datetime{
+            background-color: black;
+            color: white;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body style="height: 3000px; padding-top: 75px; padding-left: 50px;">
+    <div class="container">
+        <div class="div1">
+            <div class="datetime">12/12/99</div>
+            div1</div>
+        <div class="div2">div2</div>
+    </div>
+    <div class="navbar">
+        <div>navbar</div>
+    </div>
+    <div class="sidebar">
+        sidebar
+    </div>
+</body>
+</html>

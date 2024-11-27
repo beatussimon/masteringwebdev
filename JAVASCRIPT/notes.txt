@@ -1,0 +1,58 @@
+the yt channel - supersimple dev
+order of precedence
+
+calcumations with floats are inaccurete the best practicvec is to do teh maths in cents and ten convert it back to dollars
+rounding a number is putting to the nearest interger
+38:00 rounding
+
+Math.random()
+
+how do you select the decimal places using the round function??
+ceil and floor functions
+
+Lesson 3:strings
+- strings in javascript can be concairnated
+- typeof tells you the number type
+-javascript concairnates things from left to right so this expression '$'+0.44+50063 will result into $0.4450063 
+
+The brackets can be used to control the order of operations
+characters can be letters, numbers, symbol and escape characters "\"
+
+"i'am the mother of her child"
+"i'am the mother of her child"
+"i'am the mother of her "child""
+VM1193:1 Uncaught SyntaxError: Unexpected identifier 'child'Understand this errorAI
+"i'am the mother of her \"child\""
+`i'am the mother of her "child"`
+
+\n - new line 
+
+strings can be made wirth single, double quotes or backticks and the backticks have special meaning 
+they are also called `...` = template strings interpolaion - lets you set a value directly into a string    
+interpolaion is a recommended solution to the inserting techniques
+
+backticks supports multiline strings
+
+
+Lesson 04: HTML CSS review and console.log
+
+HOW TO WRITE A SINGLE LINE COMMENT IN HTML AND IS IT DIFFERENT FROM CSS?? GOT IT /**/ IS FOR CSS
+
+
+How to set up the waiting time between two events in web programming using javacript
+
+lesson 05L variables
+naming convections
+camelCase
+PascalCase
+kebab-case
+snake_case
+
+
+
+know under what circumstances to use what type of variable and why
+var way of declaration is ditched why? Findout
+you can use typeof to check the type of a variable
+
+
+Lesson 06: boolean statements

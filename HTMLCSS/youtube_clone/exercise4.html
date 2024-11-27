@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .name, .email{
+            display: block;
+            margin-bottom: 5px;
+        }
+        p{  
+            width: 188px;
+            display: inline-block;
+        }
+        .items{
+            vertical-align: middle;
+        }
+        .picha{
+            width: 150px;
+            height: 40px;
+            object-fit: cover;
+            object-position: bottom;
+        }
+        #search-engine{
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .search{
+            display: block;
+            margin-top: 10px;
+            border: none;
+            box-shadow: 0px 0px 5px 0.1px rgba(0, 0, 0, 0.3);
+            border-radius: 20px ;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+        <input class="name" type="text" placeholder="Name">
+        <input class="email" type="text" placeholder="Email">
+
+        <p class="items">Thanks for chatting with our customer support. Would you like a quick survey?</p>
+        <button class="items">Yes</button>
+        <button class="items">No</button>
+        <p id="search-engine">keyboardWarrior.com</p><br>
+        <img class="picha" src="pc.jpeg" alt="All in one PC">
+        <input type="text" class="search" placeholder="Search">
+</body>
+</html>
