@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funstion Exercises</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function greet(name){
+        if(name == undefined){
+            return console.log("Hi there!")
+        }
+        console.log(`Hello ${name}!`);
+    }
+    greet('Simon')
+    greet('Beatus')
+    greet()
+
+    function convertToFarenheight(celsius){
+        farenheight = (celsius*9/5)+32;
+        return farenheight;
+    }
+    function convertToCelsius(farenheight){
+        celsius = (farenheight- 32)*5/9;
+        return celsius;
+    }
+    console.log(convertToFarenheight(25))
+
+    function convertTemperatures(number, unit){
+        if(unit == 'C'){
+            result = convertToFarenheight(number)
+            console.log(result)
+        }
+        else if(unit = 'F'){
+            result= convertToCelsius(number)
+            console.log(result)
+        }
+    }
+
+    convertTemperatures(25, 'C')
+    convertTemperatures(86, 'F')
+</script>
+</html>

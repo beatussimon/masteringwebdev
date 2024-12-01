@@ -116,3 +116,104 @@ flexbox, media queries
 grid-column-gap
 grid-row-gap
 grid-template-column
+
+
+
+
+lesson 8: Objects
+in the objects which lists the key value pairs the left is the property which is the key of the value which can be acessed via the .
+property-value pairs and you can haave multiple property value pairs with in an objects
+
+you can also delete the property from the object using the nmotation delete object.property
+
+Objects group the things together and remove the necessity of having too many variables for multiple things
+
+Bracket notations lets us use the the properties that dont work work woth dot notations
+for instance the properties with - rg. praoducts.delivery-time ......-> this will gove an error Reference error 
+the same bracket notaation can be used to crete the eklentnts of the objects for instance {
+    name: 'shirt',
+    ['delivery-time']: '1 day'
+}
+if its a string like in that exampe then the brackets are optional
+object inside object --> Nested Object
+
+
+YOU CAN HAVE FUNCTION INSIDE AN OBJECT AS A VALUE FOOR A property
+A function is another type of value
+
+
+functions inside objects are called methods
+
+JSON does not support single quotes but also does not support functions but in other ways JSON is similar to a Javascript object but woth less features
+
+we use JSON more b'se JSON is universal is used when:
+-we send data between computers
+-when we store data
+
+JSON.stringfy(object) to convert Javascript object to JSON
+
+ro change the object from JSON to Javascript object we use JSON.parse
+
+
+LOCAK STORAGE
+variables are temporary when we refesh our page they vanish
+localStorage.setItem('message', 'hello') -> the local storage supports strings only
+
+when we want to acess the item use localStorage.getItem('message')
+
+to delete the data in the local storage use 
+-> localStorage.removeItem('score') -----> this removes the STRING score
+remember converting from and to object and normal javascript object as it doesnt output the strings but JSON does
+
+use dhortcuts
+and default operators
+
+null-> means we want to intentionally have something empty
+
+
+AUTO-BOXING
+
+javascript automatically boxes the string inside an object and henece enabling it to have methods like .toUpperCase() and properties like .length
+
+always learn learn how to tekk the difference between the methos and properties
+
+Auto-boxing also works with numbers and booleans but doesn't work with null and undefined
+
+
+Objects are references
+copy by references
+
+You cant diretly compare the objects, the objects compares the references not the objects inside it
+
+const message = object4.message
+const {message} = object4 this is called destructuring (the variable name equals th property name)
+
+if we have const object4{
+    message: 'good job', 
+    price: 799
+}
+
+then to destructure this 
+
+const {message, price} = object4
+
+destructuring gives us an easier way to take the valuse out of the object and assgn them to variables
+
+SHORTHAND property
+
+
+you can just put the method in there insrtead of creating the key value pairs and it wil do the same thing
+
+if the property and variable name are the same then you can use the single term 
+for example
+if you have object5{
+    message:message
+}
+ has the same effect as 
+ object5{
+    message
+ }
+ this implies the message wikk inherit all the valuses from the previouus object
+
+
+ 5:25:47
