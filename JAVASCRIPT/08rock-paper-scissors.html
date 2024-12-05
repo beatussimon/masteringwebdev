@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+</head>
+<body>
+    <button onclick="
+        playGame('rock')
+        ">Rock</button>
+    <button onclick="
+        playGame('paper')
+    ">Paper</button>
+    <button onclick="
+        playGame('scissors')
+    ">scissors</button>
+</body>
+<script>
+    function playGame(playerMove){
+        computerMove =pickComputerMove()
+        
+        if(playerMove =='scissors'){
+            if(computerMove == 'rock'){
+                alert(`chose ${computerMove}, You lose!`);
+            }
+            else if(computerMove == 'paper'){
+            alert(`chose ${computerMove}, you win!`)
+            }
+            else if(computerMove == 'scissors'){
+                alert(`chose ${computerMove} Its a tie!`);
+            }
+        }
+
+
+        else if (playerMove =='rock'){
+            if(computerMove == 'rock'){
+                alert(`chose ${computerMove}, Its a tie!`);
+            }
+            else if(computerMove == 'paper'){
+            alert(`chose ${computerMove}, you win!`)
+            }
+            else if(computerMove == 'scissors'){
+                alert(`chose ${computerMove} You win!`);
+            }
+        }
+
+        
+        else if(playerMove =='paper'){
+            if(computerMove == 'rock'){
+                alert(`chose ${computerMove}, You win!`);
+            }
+            else if(computerMove == 'paper'){
+            alert(`chose ${computerMove}, Its a tie!`)
+            }
+            else if(computerMove == 'scissors'){
+                alert(`chose ${computerMove} You lose!`);
+    }
+        }
+    }
+
+    function pickComputerMove(){
+        computerMove = '';
+        randomNumber= Math.floor(Math.random()*(4-1)+1);
+        
+        if(randomNumber == 1){
+            computerMove = 'rock'
+        }
+        if(randomNumber == 3){
+            computerMove = 'scissors'
+        }
+        else if(randomNumber == 2){
+            computerMove = 'paper'
+        }
+        
+        console.log(computerMove)
+        return computerMove
+    }
+    
+</script>
+</html>
