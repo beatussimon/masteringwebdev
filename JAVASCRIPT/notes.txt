@@ -56,3 +56,22 @@ you can use typeof to check the type of a variable
 
 
 Lesson 06: boolean statements
+
+
+input element <input/> is a VOID element since it does not requore  closing tag
+clicks and keydowns are known as events
+onclick and onkeydown are known as event litseners
+
+put event into a argument and hence acessible inside the function
+
+you can convert a number into a string using String()
+
+SPECIAL STRING BEHAVIOUR
+Dont do math with numbers do math with strings
+
+document object
+window object:
+javascripts add window. other things that we normally use in web programming automatically
+window object represents the browser
+
+LESSON 10: HTML, CSS and  JAVCASCRIPT together

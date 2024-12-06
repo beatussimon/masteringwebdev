@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live typing</title>
+</head>
+<body>
+    <input class="js-input" onkeydown="livelive()" type="text" placeholder="Type something here">
+    <div class="js-live-transcript"></div>
+</body>
+<script>
+    function livelive(){
+        
+        const liveDivElement= document.querySelector('.js-live-transcript')
+        const inputElement = document.querySelector('.js-input')
+        
+        liveDivElement.innerHTML = inputElement.value
+    }
+</script>
+</html>

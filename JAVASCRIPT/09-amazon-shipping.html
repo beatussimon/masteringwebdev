@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASC</title>
+</head>
+<body>
+    <p>Amazon shippong calculator</p>
+    <p>Order under $40 += $10 shipping</p>
+    <p>Order over $40 = FREE</p>
+    <input class="js-input" onkeydown="
+    if(event.key === 'Enter'){calculateShippingCost()}
+    "type="text" placeholder="cost of order">
+    <button onclick="
+    calculateShippingCost()"
+    >Calculate</button> 
+    <p class="js-p"></p>
+</body>
+<script>
+    google='45'
+    console.log()
+    function calculateShippingCost(){
+        const inputElement = document.querySelector(".js-input")
+        const pElement = document.querySelector(".js-p")
+
+
+        if(inputElement.value <= 40){
+            return pElement.innerHTML = `$ ${Number(inputElement.value) + 10}`
+        }
+        if(inputElement.value >= 40){
+            return pElement.innerHTML = `$ ${Number(inputElement.value)}`
+        }
+    }
+</script>
+</html>

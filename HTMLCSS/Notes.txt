@@ -215,5 +215,22 @@ if you have object5{
  }
  this implies the message wikk inherit all the valuses from the previouus object
 
+shorthand syntax method --> you can just write method(){
+    and define your function and it is valid
+}
 
- 5:25:47
+quick question: how do you inherit a method in javascript??
+
+LESSON 09
+the cocument property models the page hence the name dom
+the dom gives javascript control of the webpage i mean for me the control of our webpage
+
+when an element id inside of javascript it is being convrted into javascript
+
+method is a function saved inside the object
+
+if you  use document.querySelector('button') it wil get the first button in a page and if you change to another html element it will choose the first element specified REMEMBER THAT
+
+adding a class ATTRRIBUTE adds a label that spedifies what is being labbeled
+
+element.InnerHTML works fine with text but having spaces can ruin the thing and to avoid this use element.InneText property

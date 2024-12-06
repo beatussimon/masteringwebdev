@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Revised</title>
+</head>
+<body>
+    <button onclick="
+        playGame('rock')
+        ">Rock</button>
+
+    <button onclick="
+    playGame('paper')
+    ">Paper</button>
+
+    <button onclick="
+    playGame('scissors')
+    ">Scissors</button>
+
+    <button onclick="
+    localStorage.removeItem('scores')
+    ">Reset</button>
+
+    <p class="js-result"></p>
+    <p class="js-moves"></p>
+    <p class="js-scores"></p>
+</body>
+<script>
+    let scores = JSON.parse(localStorage.getItem("scores")) || {
+        wins: 0,
+        losses:0,
+        tie: 0
+    }   
+    
+    function playGame(playerMove){
+        let computerMove= computerMoveFun()
+        let result= '';
+        if(playerMove === "rock"){
+            if(computerMove === "rock"){
+                scores.tie+=1;
+                result = "its a tie"
+            }
+            if(computerMove === "paper"){
+                scores.losses+=1;
+                result='its a loss'
+            }
+            if(computerMove === "scissors"){
+                scores.wins+=1;
+                result="its a win"
+            }
+        }
+        else if(playerMove === "paper"){
+            if(computerMove === "rock"){
+                scores.wins+=1;
+                result = "its a win"
+            }
+            if(computerMove === "scissors"){
+                scores.losses+=1;
+                result='its a loss'
+            }
+            if(computerMove === "paper"){
+                scores.tie+=1;
+                result="its a tie"
+            }
+        }
+        else if(playerMove === "scissors"){
+            if(computerMove === "paper"){
+                scores.wins+=1;
+                result = "its a win"
+            }
+            if(computerMove === "rock"){
+                scores.losses+=1;
+                result='its a loss'
+            }
+            if(computerMove === "scissors"){
+                scores.tie+=1;
+                result="its a tie"
+            }
+        }
+        localStorage.setItem('scores', JSON.stringify(scores))
+        document.querySelector('.js-moves').innerHTML= `you ${playerMove} : ${computerMove} computer`
+
+        document.querySelector('.js-scores').innerHTML=` SCORES:
+            wins: ${scores.wins}, losses:${scores.losses}, ties: ${scores.tie}`
+        document.querySelector('.js-result').innerHTML= result;
+    }
+    
+    function computerMoveFun(){
+        randomNumber= Math.floor(Math.random()*3+1)
+        let computerMove;
+        
+        if(randomNumber === 1){
+            computerMove = "rock";
+        }
+        else if(randomNumber === 2){
+            computerMove= "paper"
+        }
+        else if(randomNumber === 3){
+            computerMove = "scissors"
+        }
+        return computerMove
+    }
+</script>
+</html>
