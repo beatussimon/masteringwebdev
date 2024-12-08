@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More about arrays and loops</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const array1 = [1,2,3]
+    const array2 = array1.slice();
+    array2.push(7)
+    console.log(array1)
+    console.log(array2)
+
+    for(let i=0; i<10; i++){
+        if(i%5 === 0){
+            continue;
+        }
+        console.log(i)
+    }
+
+    function doubleElements(array){
+        for(let i=0; i<array.length; i++){
+            array[i] = array[i]*2
+        }
+        return array;
+    }
+
+    const narray = [12,16,18]
+    console.log(doubleElements(narray))
+</script>
+</html>

@@ -82,3 +82,56 @@ myArray.splice() deletes an element from an array
 it takes two arguments first specifies the index and the secod specifies the number of items from that index should be deleted
 
 myArray.splice(1, 4)
+
+
+9:13:00
+
+arrays like objects are references on assigning you just assign the copy and they all pint to the same memory location
+
+
+Notice there is a difference between splice() -> deletes the elementse an array depending on the arguments you provides while slice() creates a new copy of an aray and gives the entirely new array which importantly points to the different memory location and hence can be manipulated independent of the old array you copied from
+
+arrays can also be destructured
+
+for instance 
+const[firstValue, secondValue] = [12,45,56] the left vvariables will assgn each variable to the respective values in the right hand side
+
+
+ACCUMULATOR PATTERN - > very importand in appending aitems both numbers and strings REMEMBER
+
+
+LESSON !2: ADVANCED functions
+just like variables functions are also values, this implies that functions can be saved inside the variables
+
+on checking the typeof data it shows as function
+
+Anonymous function- a function without a name
+
+function greeting(){
+    console.log("Hello!")
+}
+IS actially a shortcut for 
+var greeting= function(){
+    console.log("Hello")
+}
+
+Advantages of that syntax shortcut:
+->Eacier to read
+
+->Hoisting order of writing doesnt mateer like in normal function 
+
+Method-> function saved inside an object 
+This is called  to passin a functio to a function the function THAT WE ARE PASSING IN IS CALLED A CALLBACK FUNCTION OR CALL BACK
+
+ASYNCHRONOUS CODE;
+The computer wont wwait for a line to finish before going to the next line
+SYNCHRONOUS CODE:
+This means the compputer will wait for one line to finidh before going to the next line
+
+by default the language is synchnronous but only when cetain features of javascript are used then the asynchronous ability is used for instance the FUNCTION setTimeout()
+Its advantage is it doesnt block our code for the set time
+
+setInterval(function we want to run in the future, time in milliseconds(and will keep running the code every 3 seconds))
+those arguments are the same for the set interval and settimeout
+
+9:56
