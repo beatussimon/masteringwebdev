@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance function</title>
+    <style>
+        .js-paragraph{
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="stopTheInterval()">Stop the intervals</button>
+    <p class="js-paragraph"></p>
+</body>
+<script>/*    function run(){
+        console.log("Life is amazing")
+        document.querySelector('.js-paragraph').innerHTML= 'I\'m thankful for the life i have'
+    }
+    let intervalId;
+    let isActive = false;
+    function stopTheInterval(){
+        if(!isActive){
+            intervalId = setInterval(run, 2000);
+            console.log("Interval is active!")
+            isActive = true;
+            console.log(isActive)
+        }else{
+            clearInterval(intervalId);
+            console.log("Interval stopped!")
+            isActive= false;
+            console.log(isActive)
+        }
+    }*/
+
+const array1 = [
+    'im an engineer',
+    'i study at udsm',
+    'i love what i do',
+    'i love programming'
+]
+let paragraphHTML= ''
+array1.forEach(function(value, index){
+    const html = document.querySelector('.js-paragraph')
+    html.innerHTML = value
+})
+</script>
+</html>

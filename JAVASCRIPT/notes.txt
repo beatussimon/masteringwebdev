@@ -135,3 +135,10 @@ setInterval(function we want to run in the future, time in milliseconds(and will
 those arguments are the same for the set interval and settimeout
 
 9:56
+
+10:00:00- finish lesson 11 and do all the exercises
+
+
+
+
+Lesson 12: Advanced functions part II
