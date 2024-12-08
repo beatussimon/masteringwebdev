@@ -3,6 +3,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASC</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .js-input{
+            padding: 10px;
+        }
+        .calculate-button{
+            padding: 12px 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            font-weight: bold;
+        }
+
+    </style>
 </head>
 <body>
     <p>Amazon shippong calculator</p>
@@ -11,7 +27,7 @@
     <input class="js-input" onkeydown="
     if(event.key === 'Enter'){calculateShippingCost()}
     "type="text" placeholder="cost of order">
-    <button onclick="
+    <button class="calculate-button" onclick="
     calculateShippingCost()"
     >Calculate</button> 
     <p class="js-p"></p>

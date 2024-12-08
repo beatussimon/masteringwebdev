@@ -75,3 +75,10 @@ javascripts add window. other things that we normally use in web programming aut
 window object represents the browser
 
 LESSON 10: HTML, CSS and  JAVCASCRIPT together
+
+LESSON 11- ARRRAY AND LOOPS
+despite of a variable being a const its values can be changes usind  the index operator
+myArray.splice() deletes an element from an array 
+it takes two arguments first specifies the index and the secod specifies the number of items from that index should be deleted
+
+myArray.splice(1, 4)

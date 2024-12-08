@@ -1,0 +1,92 @@
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo- List</title>
+    <style>
+        .div-the-inputs, .js-add-paragraphs{
+            display: grid;
+            grid-template-columns: 300px 200px 100px;
+            margin-bottom: 20px;
+        }
+        .paragraphs-in-div{
+            display: inline-block;
+            padding-right: 20px;
+        }
+        .separate-the-contents{
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        input{
+            padding: 20px;
+            font-size: 16px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            padding: 50px 500px 40px 500px;
+        }
+        button{
+            width: 100px;
+            height: 65.5px;
+            border: none;
+            color: white;
+        }
+
+    </style>
+ </head>
+ <body>
+    <p style="
+        text-align: center; font-size: 72px;
+        ">Todo-List</p>
+    <div class="div-the-inputs">
+        <input type="text" placeholder="add a todo" class="js-input-todo separate-the-contents">
+        <input type="date" name="" class="js-input-date separate-the-contents">
+        <button onclick="addTodo()" style="
+        background-color: green;
+        ">Add</button>
+    </div>
+    <div class="js-add-paragraphs"></div>
+ </body>
+ <footer style=" 
+    position: fixed;
+    bottom: 0px;
+    text-align: center;">
+    <p>&copy; Mtaalamu Inc. 2024</p>
+ </footer>
+ <script>
+
+    let todoList= {
+        todo:['coock dinner'],
+        date:['2024-12-15']
+    };
+    const InputElement= document.querySelector('.js-input-todo');
+    const InputDateElement= document.querySelector('.js-input-date');
+    const divElement = document.querySelector('.js-add-paragraphs');
+    loopThrough()
+    function loopThrough(){
+        
+        innerHTMLValue= ''
+        for(let i=0; i<todoList.date.length; i++){
+            let divHTML = `<p class="paragraphs-in-div separate-the-contents">${todoList.todo[i]}</p><p class="paragraphs-in-div separate-the-contents">${todoList.date[i]}</p> <button style="
+            background-color: rgb(752, 20, 20);
+            " onclick="
+                todoList.todo.splice(${i}, 1);
+                todoList.date.splice(${i}, 1);
+                loopThrough()
+                " class="separate-the-contents">Delete</button>`
+            divElement.innerHTML = innerHTMLValue+=divHTML; 
+        }
+
+    }
+    function addTodo(){
+        todoList.todo.unshift(InputElement.value)
+        todoList.date.unshift(InputDateElement.value)
+        console.log(todoList)
+
+        loopThrough()
+        InputElement.value = ''
+        InputDateElement.value = ''
+    }
+ </script>
+ </html>

@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style>
+        .subscribe-button{
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 50px;
+        }
+        .subscribe-clicked{
+            background-color: rgb(240, 240, 240);
+            color: black;
+        }
+    </style>
 </head>
 <body>
     <p>Youtube subscribe button</p>
     <button onclick="
     subscribe()
-    " class="js-subscribe-button">Subscribe</button>
+    " class="js-subscribe-button subscribe-button">Subscribe</button>
 </body>
 <script>
     function subscribe(){
@@ -17,9 +30,11 @@
 
     if(buttonElement.innerHTML === 'Subscribe'){
         buttonElement.innerHTML = 'Subscribed'
+        buttonElement.classList.add('subscribe-clicked')
     }
     else{
         buttonElement.innerHTML = 'Subscribe'
+        buttonElement.classList.remove('subscribe-clicked')
     }
     }
 </script>
