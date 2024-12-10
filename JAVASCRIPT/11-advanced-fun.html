@@ -7,11 +7,28 @@
         .js-paragraph{
             font-size: 60px;
         }
+        .js-paragraph-div{
+            font-size: 32px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgreen;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        p{
+            border: 12px solid rgb(0, 68, 255);
+            margin: 30px;
+            padding: 1ch;
+            width: 200px;
+                }
     </style>
 </head>
 <body>
     <button onclick="stopTheInterval()">Stop the intervals</button>
-    <p class="js-paragraph"></p>
+    <div class="js-paragraph-div">
+
+    </div>
 </body>
 <script>/*    function run(){
         console.log("Life is amazing")
@@ -31,9 +48,20 @@
             isActive= false;
             console.log(isActive)
         }
-    }*/
+    }
 
 const array1 = [
+    'im an engineer',
+    'i study at udsm',
+    'i love what i do',
+    'i love programming',
+    'im an engineer',
+    'i study at udsm',
+    'i love what i do',
+    'i love programming',
+    'i study at udsm',
+    'i love what i do',
+    'i love programming',
     'im an engineer',
     'i study at udsm',
     'i love what i do',
@@ -41,8 +69,19 @@ const array1 = [
 ]
 let paragraphHTML= ''
 array1.forEach(function(value, index){
-    const html = document.querySelector('.js-paragraph')
-    html.innerHTML = value
-})
+    const html = `<p>${value}</p>`
+    const divHTML= document.querySelector('.js-paragraph-div')
+    divHTML.innerHTML = paragraphHTML+=html;
+    
+    
+    
+    function sayHello(){
+        console.log("Hello!")
+    }
+    setInterval(() => {
+        console.log("God is good!")
+    }, 1000 );
+    setTimeout(sayHello,5000)
+})*/
 </script>
 </html>

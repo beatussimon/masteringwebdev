@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="js-title-messages"></title>
+</head>
+<body>
+    <button onclick="add()">Add</button>
+    <button onclick="remove()">Remove</button>
+
+</body>
+<script>
+    let messageCount = 0;
+    const titleElement = document.querySelector('.js-title-messages')
+    function add(){
+        if(messageCount<0){
+            titleElement.innerHTML='App';
+            messageCount +=1;
+        }
+        else{
+            messageCount+=1;
+            titleElement.innerHTML= `(${messageCount}) New messages`
+        }
+    }
+    function remove(){
+        if(messageCount<0){
+            titleElement.innerHTML='App';
+        }
+        else{
+            if(messageCount < 2){
+                titleElement.innerHTML='App';
+            }
+            else{
+                messageCount-=1;
+                titleElement.innerHTML= `(${messageCount}) New messages`
+            }
+        }
+    }
+</script>
+</html>

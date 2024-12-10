@@ -137,8 +137,59 @@ those arguments are the same for the set interval and settimeout
 9:56
 
 10:00:00- finish lesson 11 and do all the exercises
-
+done use a name of a function as an argument to another function not the functon notation
 
 
 
 Lesson 12: Advanced functions part II
+Arrow function
+arrow functio has fewer parameter that normal function dont have 
+
+awhen the function is one line you can remove the curly brackets and and automatically return the results
+
+sometimes its very good to use regular functions b'se the enable hoisting and they are easier to read
+In objects its advised tio use the shorthand method since its easier to read than using arrow function
+for instance
+randomObject ={
+    key: name,
+    method: ()=>{
+
+    }, 
+    method(){
+        This one is easier to use 
+    }
+}
+
+Add event litsener gives us the ability to run code when you interact with an element
+
+so it the best way to interact with an element instead of onclick
+add event litsrener enables us to add multiplle events for a single element 
+
+
+10:20:00 add event litseners
+
+2More array methods: .filter() => return a new array depending on the the values allowed in the return statement 
+for example [12,22, 34].filter(value, (=>{
+    return true /since it always returns true the new array will contain all the elements
+
+    fi the return false; the new array wont contain any element
+
+    return value>= 0 , return true if the values are greater than 0 and false if otherwise
+})) 
+
+
+the .map() aray method works like foreach and filter method the only differene id that the return value will be a value
+
+for example 
+[23,12,56].map((value,index)=>{
+    return value*2;
+})
+
+
+CLOSURE - in javascript it means if a function has an acess to a value  it will always have acess to that value
+=> value gets packaged together(enclosed) with the function
+finish the exercises of chapter 12 understand the improvements made to the RPS and TOdo list apps and make sure you are able to do them
+
+10:58; continue with exercise 12n
+LESSON 13: START TE AMAZON PROJECT AND INTRO TO GIT 
+11:00:00

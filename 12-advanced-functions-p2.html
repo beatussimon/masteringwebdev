@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-ADVFunP2</title>
+</head>
+<body>
+    <button class="js-button">click me</button>
+</body>
+<script>
+    const buttonElement = document.querySelector('.js-button')
+    const eventListener = ()=>{
+        console.log("hey there")
+    } 
+    buttonElement.addEventListener('click', eventListener) 
+    buttonElement.removeEventListener('click', eventListener);
+    buttonElement.addEventListener('click', ()=>{
+        console.log('This is a new event')
+    })
+</script>
+</html>
