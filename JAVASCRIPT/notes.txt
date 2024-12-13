@@ -197,4 +197,5 @@ map() will return array based on the returned value
 QUETIONS: If multiple classes are to be selected in an event fow is that  going to be accomplished if the event will select the first target it encounters with
 
 LESSON 13: START TE AMAZON PROJECT AND INTRO TO GIT 
-11:00:00
+
+12:01: -cart.js make sure you finish today's lesson and study electronics(anorld)/database
