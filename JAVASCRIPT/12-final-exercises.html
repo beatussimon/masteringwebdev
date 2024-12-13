@@ -3,11 +3,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final exercises</title>
+    <style>
+        .js-div-disappear{
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
-    
+    <button class="js-button-confirm">Reset</button>
+    <div class="js-div"></div>
 </body>
 <script>
+    /*
 function addNum(array,num){
     array.map((value, index)=>{
         return value;
@@ -23,5 +30,55 @@ console.log(array.map((value, index)=>{
 }
 addNum([45,5,56], 2)
 
+let array = {name:['eggMIa','apple', 'egg','egg','ham']};
+
+let listedArray =''
+const paragraphElement = document.querySelector('.js-div-element')
+
+array.name.forEach((value)=>{
+    listedArray += `<p>${value}</p>`
+    paragraphElement.innerHTML =listedArray
+})
+function showConfirmationMessage(){
+            messageElement = document.querySelector('.js-div');
+            messageElement.innerHTML ='<p>Are you sure you want to reset the score? <button class="js-confirm">Yes</button><button class="js-confirm">No</button></p>'
+        }
+
+paragraphElement= document.querySelector('.js-hidden-button');
+    paragraphElement.addEventListener('keydown',(event)=>{
+    console.log(event.key)
+    if(event.key === 'Backspace'){
+        showConfirmationMessage()
+    }
+})
+document.querySelector('.js-confirm').addEventListener('keydown',()=>{
+    paragraphElement.removeEventLitsener('keydown',(event)=>{
+    console.log(event.key)
+    if(event.key === 'Backspace'){
+        showConfirmationMessage()
+    }
+})
+})*/
+
+const buttonElement = document.querySelector('.js-button-confirm')
+const divElement = document.querySelector('.js-div')
+
+function displayConfirmation(){
+    divElement.innerHTML = `<p>Are sure yoou want to reset?
+        <button class="js-button">Yes</button> <button class="js-button">No</button>
+        </p>`   
+}
+
+function onConfirm(){
+    displayConfirmation()
+
+}
+
+const buttonEvent = buttonElement.addEventListener('click', onConfirm)
+
+document.querySelector('.js-button').addEventListener('click',()=>{
+    console.log("hello")
+    buttonElement.removeEventListener('click', onConfirm)
+})
 </script>
 </html>

@@ -190,6 +190,11 @@ CLOSURE - in javascript it means if a function has an acess to a value  it will 
 => value gets packaged together(enclosed) with the function
 finish the exercises of chapter 12 understand the improvements made to the RPS and TOdo list apps and make sure you are able to do them
 
+do the exercise 12x
+map() will return array based on the returned value 
 10:58; continue with exercise 12n
+
+QUETIONS: If multiple classes are to be selected in an event fow is that  going to be accomplished if the event will select the first target it encounters with
+
 LESSON 13: START TE AMAZON PROJECT AND INTRO TO GIT 
 11:00:00
