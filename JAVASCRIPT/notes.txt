@@ -199,3 +199,11 @@ QUETIONS: If multiple classes are to be selected in an event fow is that  going 
 LESSON 13: START TE AMAZON PROJECT AND INTRO TO GIT 
 
 12:01: -cart.js make sure you finish today's lesson and study electronics(anorld)/database
+
+
+
+Which product to add we are going to learn another feature callse data attribute- just another HTML attribute
+->allows us to attach any information to an HTML element
+Syntax rules for the data attribute:
+follows the same syntax rules the attribute name on the left and attribute value on the RHS
+data attribute have to start with a "data-" and then you can give it any name you want make sure you separate a name with a dash(-) and theis is known as kebab case 
