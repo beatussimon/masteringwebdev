@@ -207,3 +207,30 @@ Which product to add we are going to learn another feature callse data attribute
 Syntax rules for the data attribute:
 follows the same syntax rules the attribute name on the left and attribute value on the RHS
 data attribute have to start with a "data-" and then you can give it any name you want make sure you separate a name with a dash(-) and theis is known as kebab case 
+
+
+
+
+
+The MAIN ideo java is:
+    save the data
+    Generate HTML
+    Make it interactive
+Finish the exerciss in 12:27:13
+
+LESSON 14: MODULES
+
+sCRIPTAGS DOES:
+COMBINE ALL THE FILES INTO 1 BIG FILE
+rUN ALL THEH CODE
+ But using script tags can cause naming conflicts -> having varibles with the same name
+
+ GETTING A VARIABLE OTSIDE THE MODULE:
+ ->add type ="module" attribute
+ ->export
+ ->import
+
+ in order for modules to work we need:
+ to put the import line at the top, secondly you need to use live server
+ when you import the variable and there is another variable having the same name you can counter this by import {cart as cartArray} from "filepath"
+ this can make sure the naming conflicts are resolved
