@@ -234,3 +234,19 @@ rUN ALL THEH CODE
  to put the import line at the top, secondly you need to use live server
  when you import the variable and there is another variable having the same name you can counter this by import {cart as cartArray} from "filepath"
  this can make sure the naming conflicts are resolved
+
+ The scriptTAG that loads our javascript into our site is called an ENTRY POINT
+
+
+
+ Import can import multiple things from a file    
+ 
+ import * as imports everything from a file and groups it together inside the object cartModule and then we can acess each import as a property or a method
+ example:
+ import * as cartModule from 'filepath';
+ cartModule.cart
+ cartModule.addToCart('id)
+
+ we keep the functions that up[date the webpage in their main files]
+
+ For instance the code that was left in the cart.js manages the cart while the amazon.js manipulates the webpage
