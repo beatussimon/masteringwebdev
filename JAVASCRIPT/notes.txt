@@ -255,3 +255,9 @@ rUN ALL THEH CODE
 the attribute type='model' enable module features for the module for the scr="specified file" so the specified file can import from other javascript files
 
 when you use a part of the data to obtain the information about the related data is called de-duplicating the data or normalizing the data
+
+
+
+For modules it is neccesary to include ./ or ../ to show the directory youo are with in
+
+using modules can reuse our code and reduce repetition
