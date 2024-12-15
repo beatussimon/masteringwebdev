@@ -250,3 +250,8 @@ rUN ALL THEH CODE
  we keep the functions that up[date the webpage in their main files]
 
  For instance the code that was left in the cart.js manages the cart while the amazon.js manipulates the webpage
+
+ CHECKOUT:
+the attribute type='model' enable module features for the module for the scr="specified file" so the specified file can import from other javascript files
+
+when you use a part of the data to obtain the information about the related data is called de-duplicating the data or normalizing the data
