@@ -261,3 +261,7 @@ when you use a part of the data to obtain the information about the related data
 For modules it is neccesary to include ./ or ../ to show the directory youo are with in
 
 using modules can reuse our code and reduce repetition
+
+finish the last 3 parts
+
+15: External libraries, MVC, Finish the checkout page
