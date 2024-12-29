@@ -265,3 +265,63 @@ using modules can reuse our code and reduce repetition
 finish the last 3 parts
 
 15: External libraries, MVC, Finish the checkout page
+gENERALLY WE LOAD THE External libraries first then we can use them in our PROJECT
+Even on adding the external library to make the library a module you need to make the module an ESM version,
+that implies that you will just add export at the beginning of the functionas we used to do in the previous javascript code to make modules
+default expoert eg. impost dayjs from 'module'
+the named export eg. import {sayHello} from "module"
+
+Generally we load the library first then we can load our libraries in our cde below
+
+Best practice in programming in javascript if you want to do something complicated find the library first before writing your own code
+
+each file can have 1 default default
+
+named export vs default export
+
+
+Main idea of javascript:
+->Save the data
+->Generate HTML
+->Make it interactive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+16: Testing
+Disadvantages of manual testing:
+->Hard to test the code in every situation
+->Hrd to retest
+
+Automated testing
+->Using code to test code
+2-types of test cases:
+basic test cases: tests if the code is working eg. in the code he just tests a normal number to see the thing is working
+ Edge cases: tests the values which are tricky they are the edge of what our code can handle
+
+ Try to test something diffrent in each test case
+ Automated test make it easier to retest our code even when we make changes to our code
+
+ On naming the tests the name should describe what the test is doing, the naming convention that is used is to describe what the code is doing
+
+ group of related tests is callled a test suite
+
+
+ Testing framework:
+ ->external library that helps us write tests easier
+ ->you can use describe inide describe
+17: Object oriented programming
+18: Backends, callbacks, promises and async wait
