@@ -264,6 +264,8 @@ using modules can reuse our code and reduce repetition
 
 finish the last 3 parts
 
+
+
 15: External libraries, MVC, Finish the checkout page
 gENERALLY WE LOAD THE External libraries first then we can use them in our PROJECT
 Even on adding the external library to make the library a module you need to make the module an ESM version,
