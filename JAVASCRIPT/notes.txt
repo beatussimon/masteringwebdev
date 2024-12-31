@@ -302,7 +302,9 @@ This runs our code when we interact with the page
 
 model->View->controller->model  keeps happening in a loop
 ****We use MVC to make sure that the page always matches the data
-MVC is known as the design pattern 
+MVC is known as the design pattern
+
+15:15 refactor the getdelivery function to work propery
 
 
 

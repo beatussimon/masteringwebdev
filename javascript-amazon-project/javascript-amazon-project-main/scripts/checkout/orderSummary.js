@@ -1,5 +1,5 @@
 import { cart, removeFromCart, updateDeliveryOptions } from "../../data/cart.js";
-import { products } from "./../../data/products.js";
+import { getProduct, products } from "./../../data/products.js";
 import { formatCurrency } from "../utils/money.js";
 import { deliveryOptions } from "../../data/deliveryOptions.js";
 
@@ -39,17 +39,10 @@ return html;
 
   cart.forEach((cartItem)=>{
     
-      let matchingProduct;
       const productId = cartItem.productId;
+      const matchingProduct = getProduct(productId)
 
-      products.forEach((product)=>{
-
-      if(product.id === productId){
-          matchingProduct = product;
-      }
-  })
-
-  function ddd(cartItem){
+  function ddd(cartItem){   
     let deliverydate;
     deliveryOptions.forEach(option=>{
     const deliveryOptionsId = cartItem.deliveryOptionsId;
