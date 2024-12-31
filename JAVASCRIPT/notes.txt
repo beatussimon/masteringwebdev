@@ -287,7 +287,22 @@ Main idea of javascript:
 ->Generate HTML
 ->Make it interactive
 
+The technique that we use that we:
+->we updated the data then
+->generate all the HTML is called
+MVC: Model View Controller
+Model- saves and manages all the data so in our project all the code that saves our code in our data folder is called the model
 
+VIEW:
+this is the code that takes our data and displays on the page
+in our project if we open checkout.js all the code that takes the data and generates HTML is called the View
+
+CONTROLLER:
+This runs our code when we interact with the page
+
+model->View->controller->model  keeps happening in a loop
+****We use MVC to make sure that the page always matches the data
+MVC is known as the design pattern 
 
 
 
