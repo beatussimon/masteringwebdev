@@ -332,5 +332,11 @@ basic test cases: tests if the code is working eg. in the code he just tests a n
  Testing framework:
  ->external library that helps us write tests easier
  ->you can use describe inide describe
+in jasmine specrunner.html is the ssame as tests.html in our previous files
+spec===test
+
+You can use describe inside describe for aesthetic reasons and arrange your code properly
+
+
 17: Object oriented programming
 18: Backends, callbacks, promises and async wait
