@@ -310,16 +310,6 @@ MVC is known as the design pattern
 
 
 
-
-
-
-
-
-
-
-
-
-
 16: Testing
 Disadvantages of manual testing:
 ->Hard to test the code in every situation
