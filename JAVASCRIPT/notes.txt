@@ -337,6 +337,23 @@ spec===test
 
 You can use describe inside describe for aesthetic reasons and arrange your code properly
 
+16:20 -continue asmine testing diff func
+
+The best practice in testing is to test each if condition of an if statement This is known as TEST COVERAGE => This means how much of the code is being tested (try to maximize the test coverage)
+
+fLACKY TEST : A TEST THAT SOMETIMES PASSES AND SOMETIMES FAILS  even if we dont change the code 
+
+MOCKS: a mock lets us replace a method with a fake version and then we can make the fake version do what we want
+
+16:33 MOCKS
+
+If the jdfile uses import you must add the type module 
+spyOn function gives us the two things firs argument it takes is the object we want to mock and the second argument is the method we want to mock
+
+It reads like english we are spying on local storage dot get item and call fake
+
+A mock only lasts for 1 test
+
 
 17: Object oriented programming
 18: Backends, callbacks, promises and async wait
