@@ -1,4 +1,4 @@
-import { renderOrderSummary } from "../../scripts/checkout/orderSummary.js";
+import { renderOrderSummary  } from "../../scripts/checkout/orderSummary.js";
 import { loadFromStorage , cart} from "../../data/cart.js";
 
 describe('test suite: renderOrderSummary', ()=>{
