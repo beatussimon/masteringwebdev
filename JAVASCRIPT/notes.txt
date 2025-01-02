@@ -354,6 +354,22 @@ It reads like english we are spying on local storage dot get item and call fake
 
 A mock only lasts for 1 test
 
+testing a single function : Unit test since we are testing a single piece of code
+
+Intergration tests tests many units/ pieces of code working together
+
+16:50 - intergration tests
+In interfration tests we can test:
+=>How the page looks
+=>How the page behaves
+
+A hook let us run code for each test:
+before each hook
+
+it not only that JASMINE provides us with different hooks beforeEach()-----> run code before each test
+afterEach() ----> run code after each test
+beforeAll() ----> run code before  all tests
+afterAll( ------>Runs code after all tests)
 
 17: Object oriented programming
 18: Backends, callbacks, promises and async wait

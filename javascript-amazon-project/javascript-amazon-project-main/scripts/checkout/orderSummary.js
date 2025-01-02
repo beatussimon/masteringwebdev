@@ -1,8 +1,9 @@
 import { cart, removeFromCart, updateDeliveryOptions } from "../../data/cart.js";
-import { getProduct, products } from "./../../data/products.js";
 import { formatCurrency } from "../utils/money.js";
 import { deliveryOptions } from "../../data/deliveryOptions.js";
 import { renderPaymentSummary } from "./paymentSummary.js";
+import dayjs from 'https://unpkg.com/dayjs@latest/esm/index.js';
+import { products,getProduct } from "./../../data/products.js";
 
 
 export function renderOrderSummary(){
@@ -58,7 +59,7 @@ return html;
   }
 
       cartContainerHTML +=`
-      <div class="cart-item-container js-cart-item-container-${matchingProduct.id}">
+      <div class="cart-item-container js-cart-item-container js-cart-item-container-${matchingProduct.id}">
               <div class="delivery-date">
                 Delivery date: ${ddd(cartItem)}
               </div>
@@ -74,14 +75,14 @@ return html;
                   <div class="product-price">
                     $${formatCurrency(matchingProduct.priceCents)}
                   </div>
-                  <div class="product-quantity">
+                  <div class="product-quantity js-product-quantity-${matchingProduct.id}">
                     <span>
                       Quantity: <span class="quantity-label">${cartItem.quantity}</span>
                     </span>
                     <span class="update-quantity-link link-primary">
                       Update
                     </span>
-                    <span data-product-id="${matchingProduct.id}" class="delete-quantity-link link-primary js-delete-link">
+                    <span data-product-id="${matchingProduct.id}" class="delete-quantity-link link-primary js-delete-link js-delete-link-${matchingProduct.id}">
                       Delete
                     </span>
                   </div>
@@ -124,3 +125,4 @@ return html;
   })
 }
 
+console.log(dayjs())
