@@ -371,5 +371,10 @@ afterEach() ----> run code after each test
 beforeAll() ----> run code before  all tests
 afterAll( ------>Runs code after all tests)
 
+
+Process that we do when we write code:
+1.We make changes to our code 
+2. Rerun the tests
+
 17: Object oriented programming
 18: Backends, callbacks, promises and async wait
