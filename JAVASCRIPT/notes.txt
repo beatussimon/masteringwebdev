@@ -442,4 +442,15 @@ IF YOU HAVE A PROPERTY EQUALING UNDEFINED YOU CAN JUST LEAVE IT PLAIN:
 
 Class =>  better way to generate classes  in object oriented programming 
 
+Making properties pricvate means they can only be acceses inside the class
+
+#property -> this is a privee properly that can only be accesed inside the class
+
+Without a hash ca property is called  A PUBLIC PROPERTY
+
+A field is a PROPERTY
+
+We also can have private methods
+=>>
+
 18: Backends, callbacks, promises and async wait
