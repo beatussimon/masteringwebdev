@@ -378,6 +378,20 @@ Process that we do when we write code:
 
 17: Object oriented programming
 17:37
+The style of programming that we've been using is called procedural programming 
+procedure: a set of step by step instructions
+         : this is basically a function: we organixe our code into set of functins
+
+In OOP we organize our code into objects
+
+let cart; === let cart=undefined
+Inside an object we can use the word expert or let to use it we should convert it into a property and value
+
+Why use OOP:
+-> OOP tries to represent the real world
+->Easy to create multiple objects
+
+For things that generate objects we use pascalCase as a naming conventions
 
 
 18: Backends, callbacks, promises and async wait
