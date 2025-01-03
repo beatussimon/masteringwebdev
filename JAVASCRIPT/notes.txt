@@ -394,4 +394,52 @@ Why use OOP:
 For things that generate objects we use pascalCase as a naming conventions
 
 
+EVEN BETTER WAY TO GENERATE OBJECTS:
+-------------------------------------
+=====================================
+CLASS- is an object generator 
+
+This is going to point to te object we generate
+Each object we generate is an instance of the bject we generate
+
+OOP- organizing our code into javascript objects(tries to represent the real world)
+
+CLASS- helps us generate these objects
+
+Benefits of classes:
+->cleaner than using a finction
+->classes have extra features for object-oriented -programming
+1. => Constructor -> lets us run some setup code after creating an object 
+
+constructor helps us put this code inside our class: 
+{{{{{
+    const cart = new Cart();
+const businessCart= new Cart()
+
+cart.localStorageKey = 'cart-oop'
+businessCart.localStorageKey= 'cart-business'
+
+cart.loadFromStorage()
+businessCart.loadFromStorage()
+
+console.log(cart);
+console.log(businessCart); 
+console.log(businessCart instanceof Cart)
+}}}}}
+
+
+consrtuctor  works like a normal method if we put come code inside it is gonna run it 
+the special thing about the constructor is that if we generate thiis object 
+ it will run this constructor automatically
+
+More details about the constructor:
+    IT HAS TO BE NAMED Constructor;
+    SHOULD NOT RETURN ANYTHING FROM A Constructor
+
+IF YOU HAVE A PROPERTY EQUALING UNDEFINED YOU CAN JUST LEAVE IT PLAIN:
+    const PropertyName = undefined; is the dame as propertyName;
+
+
+Class =>  better way to generate classes  in object oriented programming 
+
 18: Backends, callbacks, promises and async wait
