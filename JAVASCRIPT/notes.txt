@@ -477,4 +477,32 @@ POLYMORPHISM: we can ise a method without knowing waht class it is
 instead of using if else or ternary iperatir we can have the same method for both classes and the class itself will determine what the mothod does 
 For instance if we add the appliance class we wont need to change any of the code in the HTML page since the Appliance class will determine what extraInfoHTML does
 
+
+Testing class as an EXERCISE
+BUILT-IN classes - classes provided by the language
+
+this. feature lets an object access its own properties
+In javascript this can be accesed anywhere in our code
+
+at the point of acessing the inside **this the object has not been created yet!!  => 
+
+If we are inside the object this will point to the object WHILE when we are outside the object there is nothing to point to and this will be undefined
+
+
+The last place we can use this is inside the function;when you are inside an object this has nothing to point to hence its value will equal undefined However:
+function logThis(){
+  console.log(this)
+}
+logThis();
+logThis.call('hello')
+
+functions have a method called .call() .call() runs the function  except we can set the value of this to whatever we want 
+
+.call is the same as running the function except when we are running the function we add a parameter infront this  parameter is the value of this 
+
+Last important thing to know is that arrow function do not change the value of this
+In arrow function this will have the same value as if it was outside which is undefined
+
+Both inside foreach and foreach have the same value that was to resolve the iddue javascript had in the past where if this was inside the object and when had a function inside this had different value
+
 18: Backends, callbacks, promises and async wait

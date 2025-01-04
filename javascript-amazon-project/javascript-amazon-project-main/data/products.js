@@ -716,3 +716,9 @@ export function getProduct(productId){
 }})
 return matchingProduct; 
 }
+
+function logThis(){
+  console.log(this)
+}
+logThis();
+logThis.call('hello')
