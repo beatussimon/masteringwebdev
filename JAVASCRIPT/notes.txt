@@ -451,6 +451,11 @@ Without a hash ca property is called  A PUBLIC PROPERTY
 A field is a PROPERTY
 
 We also can have private methods
-=>>
+=>>just ass # at the beginning of the method to make it private
+
+18:29 -working on our homepage
+consverting regular objects into class, to visualizze this we have a regular object and we are wrapping it inside a class
+and he reason we do this is that classes have extra feature we can use  we can:
+we can add methods and private methods
 
 18: Backends, callbacks, promises and async wait
