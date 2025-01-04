@@ -458,4 +458,23 @@ consverting regular objects into class, to visualizze this we have a regular obj
 and he reason we do this is that classes have extra feature we can use  we can:
 we can add methods and private methods
 
+INHERITANCE:
+inheritance lets us reuse code between classes
+
+we call the products the Parent class and the the clothing the Child class  
+
+We use inheritance when 1 class is a more speciefic type of another class
+
+super() calls the constructor of the parent class 
+If we dont create the child constructor the child class qill by default run the parent constructor
+
+How do we know which of our products are products are clothing we included type: Its is sometimes known as a discriminator property tells us which clss we should convert into 
+
+Ehen you define the same method from the parent class inside the child class then its called mehod overriding since the parent method will be overridden/replaced
+
+POLYMORPHISM: we can ise a method without knowing waht class it is
+
+instead of using if else or ternary iperatir we can have the same method for both classes and the class itself will determine what the mothod does 
+For instance if we add the appliance class we wont need to change any of the code in the HTML page since the Appliance class will determine what extraInfoHTML does
+
 18: Backends, callbacks, promises and async wait

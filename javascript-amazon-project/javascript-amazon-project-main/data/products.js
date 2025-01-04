@@ -21,6 +21,24 @@ class Product{
   getPrice(){
     return `${formatCurrency(this.priceCents)}`
   }
+
+  extraInfoHTML(){
+    return ''
+  }
+}
+
+class Clothing extends Product{
+  sizeChartLink;
+
+  constructor(productDetails){
+    super(productDetails)
+    this.sizeChartLink = productDetails.sizeChartLink;
+  }
+//You can inherit the parent class method by calling super().extraInfoHTML
+
+  extraInfoHTML(){
+    return `<a href='${this.sizeChartLink}' targrt='_blank'>Size chart</a>`
+  }
 }
 
 export const products = [
@@ -683,6 +701,9 @@ export const products = [
     ]
   }
 ].map((productDetails)=>{
+  if(productDetails.type === 'clothing'){
+    return new Clothing(productDetails)
+  }
   return new Product(productDetails)
 });
 
