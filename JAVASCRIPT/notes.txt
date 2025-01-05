@@ -565,3 +565,42 @@ We need to send a request, and then use call back to wait for response then run 
 
 TESTING WITH A BACKEND:
 20:23 LENGO LA LEO NI 21:12
+
+done function;
+Promises:
+->Better way to handle asynchronous code
+->Similar to dono function
+->Lets us wait for the code to finish before going to the next sweatpants
+
+
+Promise is a class
+Resolve controls when to go to the next step
+
+This is the code for using promises new Promise((resolve)=>{
+    loadProducts(()=>{
+        resolve()
+    })
+}).then(()=>{
+    renderOrderSummary()
+    renderPaymentSummary()
+})
+
+ its more verbose than using a callback, So why are we using promises?
+ Multiple callbacks causes a lot of nesting ie. having code inside code like thsiss:
+ loadProducts(()=>{
+    renderOrderSummary()
+    renderPaymentSummary()
+ })
+
+ Foe example lets say we want to load the cart from the backend also:
+Using Promise object lets us have as many steps as we want but we can use resolve to wait the step to finish before going to the next step
+
+->promises helps keep our code flat while the callbacks cause lots of nesting 
+
+IT IS ADVISED TO USE PROMISES INSTEAD OF CALLBACKS 
+
+The value you provide in the resolve("HERE") is passed to the next then(value) and actually you can console.log it
+
+2ND fEATURE: We can run multiple promises at the same time using Promise.all( -> Lets us run miltiple promises at the same time and wait for all of them to finish) 
+
+Promise.all() -> lets us run multiple promises at the dame time
