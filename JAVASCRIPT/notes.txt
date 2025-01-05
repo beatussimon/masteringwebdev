@@ -604,3 +604,8 @@ The value you provide in the resolve("HERE") is passed to the next then(value) a
 2ND fEATURE: We can run multiple promises at the same time using Promise.all( -> Lets us run miltiple promises at the same time and wait for all of them to finish) 
 
 Promise.all() -> lets us run multiple promises at the dame time
+
+Fetch will make a promise and return a respponse which we can save as a parameter in then()
+
+response.json() is actually asynchronous so we need to wait for the promise to finish before we continue to the next step 
+the result of ProductData is alread an array so the JSON.parse() is done for and saved us a little bit of code
