@@ -556,3 +556,8 @@ This allows us to send the Javascript objacts across the internet to the backend
 
 Instead of getting the raw data of the image it would be useful to get the real image, and WHEN we type a url in browserit actually sends a GET request to that URL
 Using a browser is the same as getting the GET request 
+
+UNDerstand callback -> the function to call in the future
+
+THIS IS HOW WE USE BACKEND IN OUR ROJECT:
+We need to send a request, and then use call back to wait for response then run the rest of our code 

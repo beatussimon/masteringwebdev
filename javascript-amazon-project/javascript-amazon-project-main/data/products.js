@@ -1,4 +1,6 @@
 import { formatCurrency } from "../scripts/utils/money.js";
+
+
 class Product{
   id;
   image;
@@ -40,6 +42,7 @@ class Clothing extends Product{
     return `<a href='${this.sizeChartLink}' targrt='_blank'>Size chart</a>`
   }
 }
+  /*
 
 export const products = [
   {
@@ -722,3 +725,25 @@ function logThis(){
 }
 logThis();
 logThis.call('hello')
+
+*/
+
+export let products= [];
+export function loadProducts(fun){
+  const xhr =new XMLHttpRequest()
+  
+  xhr.addEventLitsener('load', ()=>{
+    products = JSON.parse(xhr.response).map((productDetails)=>{
+      if(productDetails.type === 'clothing'){
+        return new Clothing(productDetails)
+      }
+      return new Product(productDetails)
+    });
+    console.log('load products')
+
+    fun();
+  })
+  
+  xhr.open = XMLHttpRequest('GET', 'https://supersimplebackend/products')
+  xhr.send()
+}
