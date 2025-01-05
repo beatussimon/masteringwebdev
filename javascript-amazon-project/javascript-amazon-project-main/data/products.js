@@ -711,28 +711,28 @@ export const products = [
 });
 
 
-export function getProduct(productId){
-  let matchingProduct;
-      products.forEach((product)=>{ 
-      if(product.id === productId){
-          matchingProduct = product;
-}})
-return matchingProduct; 
-}
-
 function logThis(){
   console.log(this)
-}
-logThis();
-logThis.call('hello')
-
-*/
+  }
+  logThis();
+  logThis.call('hello')
+  
+  */
+ 
+ export function getProduct(productId){
+   let matchingProduct;
+       products.forEach((product)=>{ 
+       if(product.id === productId){
+           matchingProduct = product;
+ }})
+ return matchingProduct; 
+ }
 
 export let products= [];
 export function loadProducts(fun){
   const xhr =new XMLHttpRequest()
   
-  xhr.addEventLitsener('load', ()=>{
+  xhr.addEventListener('load', ()=>{
     products = JSON.parse(xhr.response).map((productDetails)=>{
       if(productDetails.type === 'clothing'){
         return new Clothing(productDetails)
@@ -744,6 +744,6 @@ export function loadProducts(fun){
     fun();
   })
   
-  xhr.open = XMLHttpRequest('GET', 'https://supersimplebackend/products')
+  xhr.open('GET', 'https://supersimplebackend.dev/products')
   xhr.send()
 }

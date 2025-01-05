@@ -71,8 +71,8 @@ function renderProductGrid(){
             cartQuantity += cartItem.quantity
           })
           document.querySelector('.cart-quantity').innerHTML =cartQuantity
-  }
-
+        }
+        
   document.querySelectorAll('.js-add-to-cart').forEach((button)=>{
       button.addEventListener('click',()=>{
           const productId = button.dataset.productId

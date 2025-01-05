@@ -561,3 +561,7 @@ UNDerstand callback -> the function to call in the future
 
 THIS IS HOW WE USE BACKEND IN OUR ROJECT:
 We need to send a request, and then use call back to wait for response then run the rest of our code 
+
+
+TESTING WITH A BACKEND:
+20:23 LENGO LA LEO NI 21:12
