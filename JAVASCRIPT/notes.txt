@@ -505,4 +505,54 @@ In arrow function this will have the same value as if it was outside which is un
 
 Both inside foreach and foreach have the same value that was to resolve the iddue javascript had in the past where if this was inside the object and when had a function inside this had different value
 
+
+
 18: Backends, callbacks, promises and async wait
+A backend is just another computer that manages the data of the website
+When two co,puters are connected to the the internet they can send messages to each other using the feature known as HTTP
+in an HTTP message we can attach other information like our order
+
+to send an HTTPrequest we use the built-in class known as XMLHttpRequest
+
+
+import { renderOrderSummary } from "./checkout/orderSummary.js";
+import { renderPaymentSummary } from "./checkout/paymentSummary.js";
+//import '../data/cart-class.js'
+import '../data/backend-practice.js'
+
+renderOrderSummary()
+renderPaymentSummary()
+
+Messages will only appear in the network tab after we open the console, If we send some messages and then open the console it is not gonna show up 
+To make surre our http messages are shown up there we need to open the network tab first and then we are gonna refresh the page and ressend those messages 
+
+HEADERS => Gives info about the request or our message
+RESSPONSE: After sending the request you get a response 
+PREVIEW: takes the response and puts it in an easy to read format
+Request-response cycle: Its is always 1 request, 1 response
+
+the xhr.send() --> It is a asynchronous code as it jumps immediately to the next line of code it does not wait for that line of code to finish it sends the request and mmediately goes to the next line
+
+19:49 wht set the eventlitsener first??
+
+The urls path is the path that comes after the URL
+
+The error message: Type, URL we sent it to, Status code
+
+STATUS CODE:
+Stars with 4 or 5 (400, 404, 500, Starting with 4 means it was our problem , starting with 5 it was the backends fault) => Failed
+Starts with 2(200,201,204, ) => was succesiful
+
+How do we know which url paths are supported => There is no speciefic way BUTTTT...
+Some backends provide documentation page 
+
+The list of backend paths which are supported is called backend API;
+API -   application programming interface (interface means how we interact with something)
+
+The backend can repond with different types of data(text, JSON, HTML, Image)
+
+Once you get some JSON you can concert it to javascript object via JSON.parse()
+This allows us to send the Javascript objacts across the internet to the backend
+
+Instead of getting the raw data of the image it would be useful to get the real image, and WHEN we type a url in browserit actually sends a GET request to that URL
+Using a browser is the same as getting the GET request 
