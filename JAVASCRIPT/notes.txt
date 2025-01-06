@@ -609,3 +609,28 @@ Fetch will make a promise and return a respponse which we can save as a paramete
 
 response.json() is actually asynchronous so we need to wait for the promise to finish before we continue to the next step 
 the result of ProductData is alread an array so the JSON.parse() is done for and saved us a little bit of code
+
+
+ASYNC AWAIT: 
+21:12
+Async await sis even a better way to  handle asynchronous code 
+returning a value from async function is the same as giving value to resolve(value)
+
+async = makes a function return a promise
+why use this => it lets us use the second feature called await
+
+AWAIT:
+lets us wait for the promise to finish before going to the next line
+
+we can only use await if we are only inside async function
+
+async can be used with promises it does nothing with a callback
+
+we hav to use the async function for us to use await 
+
+we can use promise.all with await give example and undesrand this
+
+Async await:
+->is a shortcut for promises
+->Lets us write asynchronous code like normal code
+->The best practice is to use async await over promises and callbacks 
