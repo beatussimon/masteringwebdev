@@ -661,3 +661,13 @@ when sending http requests we could get unexpected errors
 
 
       unshift method adds the order to the front in an an array
+
+
+
+      The last part is the tracking page using the url parameters
+    When we try tracking the products on the tracking page we notice the products are the same, so how do we know which products to track?
+
+    ->We can use URL parameters, the URL parameters lets us save the data directly in the the URL
+    The URL parameter is a property value pair
+
+    you can go back and forth between the search parameters
