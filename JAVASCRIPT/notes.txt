@@ -634,3 +634,25 @@ Async await:
 ->is a shortcut for promises
 ->Lets us write asynchronous code like normal code
 ->The best practice is to use async await over promises and callbacks 
+
+Error handling:
+when sending http requests we could get unexpected errors 
+
+
+  xhr.addEventListener('error', (error // usually this callback gets a parameter and this contains some information about the error)=>{
+    console.log('Unexpected error, Please try again later.')
+  })
+  
+
+  CALLBACKS, PROMISES
+
+  We can use try catch in normal code its not imited to async/await
+
+  We onl use try/catch to handle unexpected errors
+  We can manually create errors 
+  When you throw an error it skips the rest of the code
+
+      throw 'Error1'
+
+      throw does not work in the future\
+      
